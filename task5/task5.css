@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Использовать keyframes */
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: circle-motion 10s infinite;
+}
+@keyframes circle-motion {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(2300px, 0);
+    }
+    50% {
+        transform: translate(2300px, 1050px);
+    }
+    75% {
+        transform: translate(0, 1050px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
